@@ -5,6 +5,7 @@ class Solution(object):
         :rtype: int
         """
         stack = []
+        #先把总体思路想清楚再写
         for i in range(len(s)):
             if s[i].isalnum():
                 stack.append(s[i])
