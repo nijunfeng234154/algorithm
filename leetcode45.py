@@ -14,11 +14,7 @@ class Solution(object):
 
             #搜索每一步要跳多少个位置
             for i in range(1,nums[path]+1):
-                path = i+path
-                cnt += 1
-                dfs(nums,path,cnt)
-                cnt -= 1
-                path = 0
+                dfs(nums,path+i,cnt+1)
 
         dfs(nums,0,0) 
         return min(res) 
